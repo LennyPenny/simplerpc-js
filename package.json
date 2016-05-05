@@ -1,4 +1,11 @@
 {
+	"name": "SimpleRPC",
+	"version": "1.0.2",
+	"homepage": "https://github.com/LennyPenny/simplerpc-js",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/LennyPenny/simplerpc-js"
+  	},
 	"directories": {
 		"lib": "lib"
 	},
