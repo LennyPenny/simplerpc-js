@@ -1,22 +1,33 @@
 {
-	"name": "SimpleRPC",
-	"version": "1.0.3",
-	"homepage": "https://github.com/LennyPenny/simplerpc-js",
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/LennyPenny/simplerpc-js"
-  	},
-	"directories": {
-		"lib": "lib"
-	},
-	"main": "simplerpc.js",
-	"format": "es6",
-  	"registry": "jspm",
-	"jspm": {
-		"devDependencies": {
-		      "babel": "npm:babel-core@^5.8.24",
-		      "babel-runtime": "npm:babel-runtime@^5.8.24",
-		      "core-js": "npm:core-js@^1.1.4"
-	    }
-	}
+  "name": "SimpleRPC",
+  "version": "1.0.4",
+  "homepage": "https://github.com/LennyPenny/simplerpc-js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/LennyPenny/simplerpc-js"
+  },
+  "directories": {
+    "lib": "es5"
+  },
+  "scripts": {
+    "build": "babel --optional runtime lib -d es5",
+	"prepublish": "npm run build -s"
+  },
+  "main": "simplerpc.js",
+  "jspm": {
+	  "directories": {
+	    "lib": "lib"
+	  },
+	  "format": "es6",
+	  "registry": "jspm",
+      "devDependencies": {
+        "babel": "npm:babel-core@^5.8.24",
+        "babel-runtime": "npm:babel-runtime@^5.8.24",
+        "core-js": "npm:core-js@^1.1.4"
+    }
+  },
+  "devDependencies": {
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-stage-0": "^6.5.0"
+  }
 }
