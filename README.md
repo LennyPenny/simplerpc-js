@@ -31,7 +31,6 @@ api.UpdateCurrentUsers = function(num) { //expose a method the server can call
 }
 
 api.SomeMethod("arg1", 2, 3).then(function(data) { //call any method the server exposes and act once it returns
-	//do stuff
+	console.log(data);
 }); 
-console.log(data);
 ```
