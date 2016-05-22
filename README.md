@@ -1,6 +1,7 @@
 # SimpleRPC
 
-This is an implementation of a [JsonRPC](http://www.jsonrpc.org/) client in javascript (es7) for use with [jspm](http://jspm.io).
+This is an implementation of a [JsonRPC](http://www.jsonrpc.org/) client. 
+It's especially simple in es7 because it utilizes the new async/await pattern, in es5/6 it works using promises
 
 ##Example
 
