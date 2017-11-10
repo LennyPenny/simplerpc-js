@@ -3,10 +3,10 @@
 This is an implementation of a [JsonRPC](http://www.jsonrpc.org/) client. 
 It's especially simple in es7 because it utilizes the new async/await pattern, in es5/6 it works using promises
 
-##Example
+## Example
 
 
-###ES7
+### ES7
 ```js
 import simplerpc from "simplerpc" //import the lib
 
@@ -20,7 +20,7 @@ var data = await api.SomeMethod("arg1", 2, 3); //call any method the server expo
 console.log(data);
 ```
 
-###ES5
+### ES5
 ```js
 var simplerpc = require("simplerpc") //import the lib
 
